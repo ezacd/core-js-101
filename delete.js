@@ -1,10 +1,5 @@
-function getCardId(value) {
-    const mass = ['A♣','2♣','3♣','4♣','5♣','6♣','7♣','8♣','9♣','10♣','J♣','Q♣','K♣',
-   'A♦','2♦','3♦','4♦','5♦','6♦','7♦','8♦','9♦','10♦','J♦','Q♦','K♦',
-   'A♥','2♥','3♥','4♥','5♥','6♥','7♥','8♥','9♥','10♥','J♥','Q♥','K♥',
-   'A♠','2♠','3♠','4♠','5♠','6♠','7♠','8♠','9♠','10♠','J♠','Q♠','K♠']
-
-   return mass.indexOf(value) + 1
+function toNumber(value, def) {
+    return +value || def
 }
 
-console.log(getCardId('2♣'))
+console.log(toNumber(null, 1))
